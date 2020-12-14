@@ -19,7 +19,6 @@ module Players
       elsif board.turn_count == 3 && (board.position(1) == board.position(9) || board.position(3) == board.position(7))
         move = "2"
 
-      # From here on, run through the WIN_COMBINATIONS array, checking whether any of the combinations have two squares filled with the same token and a third, empty square.
       else
         Game::WIN_COMBINATIONS.detect do |cmb|
 
