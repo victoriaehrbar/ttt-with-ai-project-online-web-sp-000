@@ -3,7 +3,6 @@ module Players
     def move(board)
       move = nil
 
-      # When going first, take the middle square. When going second, take the middle square if it isn't yet taken.
       if !board.taken?(5)
         move = "5"
 
